@@ -1,4 +1,8 @@
 class BarbecuesController < ApplicationController
+  # Users can create new barbecues if they are log in only.
+  #When typing local post doesn't show me the barbecues, only the sign up form
+  before_action :authenticate_user!
+
   def index
     @barbecues = Barbecue.order(:date)
   end

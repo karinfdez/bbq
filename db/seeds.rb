@@ -5,4 +5,7 @@
 
   puts "Creating #{title} at #{venue}"
   Barbecue.create(date: Faker::Date.forward(23), title: title, venue: venue)
+     
 end
+
+admin=User.create(name: 'Karin Fernandez', email: 'karinfpe@yahoo.es',password:'ironhack', password_confirmation: 'ironhack')

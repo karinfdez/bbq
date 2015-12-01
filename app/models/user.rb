@@ -8,6 +8,9 @@ class User < ActiveRecord::Base
    
    has_many :registrations
    has_many :barbecues, through: :registrations
+
+
+ 
 end
 
 
